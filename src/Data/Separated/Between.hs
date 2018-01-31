@@ -42,7 +42,7 @@ between =
 
 -- | An @a@ with an @s@ on each side
 data Between' s a = Between' s a s
-  deriving (Eq, Foldable, Functor, Traversable, Show)
+  deriving (Eq, Foldable, Functor, Ord, Traversable, Show)
 
 deriveEq1 ''Between'
 deriveShow1 ''Between'
