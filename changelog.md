@@ -1,3 +1,7 @@
+0.3.1
+
+* Added `Ord1` instances for `Before`, `After`, `Between`, and `Between'`
+
 0.3.0
 
 * Add `Foldable1` and `Traversable1` instances for `Pesarated1`.
