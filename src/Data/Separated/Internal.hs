@@ -23,6 +23,7 @@ data Before s a = Before s a
 
 deriveEq1 ''Before
 deriveShow1 ''Before
+deriveOrd1 ''Before
 
 instance Bifunctor Before where
   bimap f g (Before s a) = Before (f s) (g a)
@@ -60,6 +61,7 @@ data After s a = After a s
 
 deriveEq1 ''After
 deriveShow1 ''After
+deriveOrd1 ''After
 
 instance Bifunctor After where
   bimap f g (After a s) = After (g a) (f s)

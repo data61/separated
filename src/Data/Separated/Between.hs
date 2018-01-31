@@ -31,6 +31,7 @@ data Between s t a = Between s a t
 
 deriveEq1 ''Between
 deriveShow1 ''Between
+deriveOrd1 ''Between
 
 -- | @'Between' s t a@ is isomorphic to @(s, a, t)@
 between :: Iso (s, a, s') (t, b, t') (Between s s' a) (Between t t' b) 
@@ -45,6 +46,7 @@ data Between' s a = Between' s a s
 
 deriveEq1 ''Between'
 deriveShow1 ''Between'
+deriveOrd1 ''Between'
 
 instance Bifunctor Between' where
   bimap f g (Between' s a s') = Between' (f s) (g a) (f s')
