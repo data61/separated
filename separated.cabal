@@ -15,7 +15,8 @@ homepage:           https://github.com/qfpl/separated
 bug-reports:        https://github.com/qfpl/separated/issues
 cabal-version:      >= 1.10
 build-type:         Custom
-EXtra-source-files: changelog.md
+extra-source-files: changelog.md
+                    Warning.hs
 tested-with:        GHC == 7.10.3, GHC == 8.0.2, GHC == 8.2.2, GHC == 8.4.1
 
 source-repository   head
