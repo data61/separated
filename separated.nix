@@ -1,11 +1,12 @@
-{ mkDerivation, base, bifunctors, deriving-compat, directory
-, doctest, filepath, lens, parsec, QuickCheck, semigroupoids
-, semigroups, stdenv, template-haskell
+{ mkDerivation, base, bifunctors, Cabal, cabal-doctest
+, deriving-compat, directory, doctest, filepath, lens, parsec
+, QuickCheck, semigroupoids, semigroups, stdenv, template-haskell
 }:
 mkDerivation {
   pname = "separated";
   version = "0.3.2.1";
   src = ./.;
+  setupHaskellDepends = [ base Cabal cabal-doctest ];
   libraryHaskellDepends = [
     base bifunctors deriving-compat lens semigroupoids semigroups
   ];
