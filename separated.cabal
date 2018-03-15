@@ -39,7 +39,7 @@ library
                     , semigroups    >= 0.9 && < 1
                     , semigroupoids >= 4.0 && < 6
                     , bifunctors    >= 4.0 && < 6
-                    , deriving-compat >= 0.3 && < 0.4
+                    , deriving-compat >= 0.3 && < 0.5
                     
   ghc-options:
                     -Wall
@@ -69,8 +69,8 @@ test-suite doctests
                     Haskell2010
 
   build-depends:
-                    base               >= 4.7   && < 5
-                    , doctest          >= 0.11 && < 0.14
+                    base               >= 4.7  && < 5
+                    , doctest          >= 0.11 && < 0.16
                     , filepath         >= 1.3
                     , directory        >= 1.1
                     , QuickCheck       >= 2.0
